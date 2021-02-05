@@ -1,5 +1,9 @@
 <?php 
     include('header.php'); 
+
+    ?>
+    <section class="center flow-text clock" id="clock">clock goes here</section>
+    <?php
     
     if(!empty($_SESSION['message'])){
         include('message.php');
@@ -158,3 +162,5 @@
     include('footer.php'); 
 ?>
 
+
+<script src = "js/showTime.js"></script>

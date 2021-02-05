@@ -4,6 +4,7 @@
 
 <div class="green-text manual flow-text">
     <h2>Manual Tecnico</h2>
+    <a href="https://github.com/daw2lmateu/library">Github del proyecto</a>
         <p>
             Header i Footer son universales, rutas de ficheros son relativas, 
             para poder reutilizarlo i testear con localhost
@@ -38,23 +39,24 @@
         <p>
             La penalizacion ahora funciona por fecha, entonces cuando el usuario intenta reservar un libro, no puede hasta la fecha indicada (puede simplemente cambiar la hora de windows)
         </p>
+        <hr>
+        <p>
+            TODO online books
+        </p>
+        <h2>Carrito de la compra</h2>
         <p>
             Ahora se pueden comprar libros, Se añaden al carrito pulsando al boton comprar. De momento se guarda en sql, asi que solo miembros pueden hacerlo
         </p>
         <p>
             En el carrito de la compra, uno puede cambair la cantidad de los libros, y se actualiza al momento mediante javascript
         </p>
-        <hr>
         <p>
-            TODO CHECK CORRECT VALUES IN INSERT AND UPDATE <br>
-            TODO Check if it's available when it's reserved ( need calendar of books and if their available or not ) <br>
-            TODO ALLOW RESERVATION OF BOOKS FROM SEARCH MENU <br>
-            TODO When a reserve gets devolutioned, put delete from reserve and put it on logs <br>
-            TODO Make reserve button send you to login with a button of register, and keep the id of the book requested to then send you to the reservation page for it <br>
-            TODO search users correctly <br>
-            TODO Page settings <br>
-            update sql when update quantity js dwes ( AJAX )
-            Comprobar que no puedas ir comprando si ya tienes la cantidad máxima en el carrito
-
+            Cuando uno esta logeado, se guarda el carrito en la base de datos, mientras que si uno no lo esta ('guest'), se guarda la cookie "_31_library_cookies_31_31"
+            Al ir a comprar, se requiere que se registre, i entonces se pasa el carrito de cookies a sql. ( no se borra de cookies hasta que se realiza la compra ).
+            <br>
+            Si el usuario tenia un carrito previo en la base de datos, cuando se logea, se borra el carrito de la base de datos, y se sustituye por el nuevo carrito proviniente de las cookies.
+        </p>
+        <p>
+            Ahora Usando ajax, aparecen sugerencias de los libros que existen en la base de datos al buscar libros. (Posiblemente se deberia limitar a 10 si aparecen muchos libros)
         </p>
 </div>

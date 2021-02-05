@@ -10,6 +10,10 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+    <!-- font -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap');
+    </style>
     <!-- DropDown -->
     <link rel = "stylesheet"
          href = "https://fonts.googleapis.com/icon?family=Material+Icons">

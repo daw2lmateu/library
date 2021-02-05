@@ -24,3 +24,8 @@ img {
 	margin-right: 150px;
 	color: antiquewhite;
 }
+
+#clock{
+	font-family: 'Big Shoulders Stencil Text', cursive;
+	color: darkslateblue;
+}
