@@ -1,0 +1,26 @@
+.brand {
+	background:#01ac18;
+}
+
+.brand-text{
+	color: #01ac18;
+}
+
+form {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+img {
+	max-width:230px;
+	max-height:300px;
+	width: auto;
+	height: auto;
+  }
+
+.manual{
+	margin-left: 150px;
+	margin-right: 150px;
+	color: antiquewhite;
+}
