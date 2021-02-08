@@ -25,7 +25,21 @@ img {
 	color: antiquewhite;
 }
 
+#weather{
+	flex: content;
+	align-items: center;
+	align-self: center;
+}
+
 #clock{
 	font-family: 'Big Shoulders Stencil Text', cursive;
 	color: darkslateblue;
+}
+
+#cloud{
+	vertical-align:middle;
+}
+
+#weather{
+	margin-top: -10px;
 }

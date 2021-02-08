@@ -2,7 +2,8 @@
     include('header.php'); 
 
     ?>
-    <section class="center flow-text clock" id="clock">clock goes here</section>
+    <section id="weather" class="center flow-text "><img id='cloud' src="img/weather/1.png" alt=""></img><span id="clock"></span></section>
+
     <?php
     
     if(!empty($_SESSION['message'])){
@@ -164,3 +165,4 @@
 
 
 <script src = "js/showTime.js"></script>
+<script src = "js/weather.js"></script>
