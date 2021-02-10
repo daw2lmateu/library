@@ -13,6 +13,8 @@ include('dbConnect.php');
         if(isset($_COOKIE[$cookies])){
             $items = json_decode($_COOKIE[$cookies], true);
             $cartType = "\"cookies\"";
+            // $items = json_decode($_SESSION["shoppingCart"], true);
+            // $cartType = "\"session\"";
         }
     }
 

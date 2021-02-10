@@ -1,10 +1,7 @@
 <?php 
     include('header.php'); 
 
-    ?>
-    <section id="weather" class="center flow-text "><img id='cloud' src="img/weather/1.png" alt=""></img><span id="clock"></span></section>
-
-    <?php
+    include('weather.php'); 
     
     if(!empty($_SESSION['message'])){
         include('message.php');
@@ -95,6 +92,7 @@
                 else{
                     if($cookiesEnabled) {
                         include('forms/buy/cookiesAddToCart.php');
+                        include('forms/buy/sessionAddToCart.php');
                     } 
                     else{
                         $_SESSION['message'] = "Registrate o activa las cookies para usar el añadir libros al carrito";
@@ -108,6 +106,7 @@
                 else{
                     if($cookiesEnabled) {
                         include('forms/buy/cookiesDeleteFromCart.php');
+                        include('forms/buy/sessionDeleteFromCart.php');
                     } 
                 }
             break;
@@ -162,7 +161,3 @@
 
     include('footer.php'); 
 ?>
-
-
-<script src = "js/showTime.js"></script>
-<script src = "js/weather.js"></script>

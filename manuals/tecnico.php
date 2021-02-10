@@ -59,4 +59,7 @@
         <p>
             Ahora Usando ajax, aparecen sugerencias de los libros que existen en la base de datos al buscar libros. (Posiblemente se deberia limitar a 10 si aparecen muchos libros)
         </p>
+        <p>
+            Los datos se guardan en cookies y session si uno no esta logeado, aun que se utiliza cookies por defecto.
+        </p>
 </div>
