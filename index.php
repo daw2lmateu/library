@@ -114,6 +114,9 @@
             case "Login":
                 include('forms/login.php');
                 break;
+            case "DisplayEbook":
+                include('forms/ebook/display.php');
+                break;
             case "Insert":
                 include('forms/book/insertResult.php');
                 break;

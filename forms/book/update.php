@@ -28,6 +28,12 @@
                 <input type="number" name="publicationYear" value="<?php echo $book[0]['publication_year']; ?>">
                 <label>Link de la imagen</label>
                 <input type="text" name="image" value="<?php echo $book[0]['image']; ?>">
+                <label>nombre del pdf (ebook)</label>
+                <input type="text" name="ebook" value="<?php echo $book[0]['ebook']; ?>">
+                <label>Precio</label>
+                <input type="text" name="price" value="<?php echo $book[0]['price']; ?>">
+                <label>Cantidad</label>
+                <input type="text" name="quantity" value="<?php echo $book[0]['quantity']; ?>">
                 <div class="center">
                     <img src="<?php echo $book[0]['image']; ?>" alt="" class="center">
                 </div>
@@ -52,12 +58,6 @@
                     </p>
                 </div>
                 <hr>
-                <div class="center">
-                    <label>
-                        <input type="checkbox" name="available" <?php if ($book[0]['quantity'] > 1) echo('checked'); ?>/>
-                        <span>¿Está disponible?</span>
-                    </label>
-                </div>
                 <br><br><br>
                 <div class="center">
                     <input type="submit" name="content" value="Update" class="btn brand z-depth-0">

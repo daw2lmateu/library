@@ -46,6 +46,12 @@
                             <h6> Precio: <?php echo($book['price']); ?>€</h6>
                             <h6> En stock: <?php echo($book['quantity']); ?> Unidades</h6>
                             <form action="index.php" method="POST">
+                                <input name="pdf" type="num" hidden value="<?php echo($book['ebook']); ?>">
+                                <button class="btn waves-effect waves-light blue" type="submit" value="DisplayEbook" name="content">Ebook
+                                    <i class="material-icons right">local_library</i>
+                                </button>
+                            </form>
+                            <form action="index.php" method="POST">
                             <?php if ($book['quantity'] > 0){ ?>
                                     <input name="id" type="num" hidden value="<?php echo($book['id']); ?>">
                                     <input name="price" type="num" hidden value="<?php echo($book['price']); ?>">

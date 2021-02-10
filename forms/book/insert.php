@@ -21,7 +21,7 @@
         <input type="number" name="price" required>
         <label>Cantidad</label>
         <input type="number" name="quantity" required>
-        <label>Ebook</label>
+        <label>Ebook (nombre pdf)</label>
         <input type="text" name="ebook">
         <div class="center">
             <label>Idioma</label>
