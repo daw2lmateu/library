@@ -50,9 +50,11 @@
                 <input type="email" name="email" value="<?php echo $data[0]['email']; ?>" required>
                 <label>Numero de telefono</label>
                 <input type="number" name="phone" value="<?php echo $data[0]['phone']; ?>">
+                <label>Direccion de envio</label>
+                <input type="text" name="address" value="<?php echo $data[0]['address']; ?>">
                 <?php if ($userType == 'admin'){ ?>
                     <label>Penalty</label>
-                    <input type="date" name="penalty" value="<?php echo $data[0]['penalty']; ?>" required>
+                    <input type="date" name="penalty" value="<?php echo $data[0]['penalty']; ?>">
                     <div class="center">
                         <label>Tipo usuario</label>
                         <p class="center">

@@ -27,12 +27,21 @@
         <li><a href=index.php?content=BorrarReserva>Borrar</a></li>
         <li><a href=index.php?content=InsertarReserva>Insertar</a></li>
         <li><a href=index.php?content=Editar+Reserva>Modificar</a></li>
-</ul>
+    </ul>
+
+    <ul id = "dropdownEbook" class = "dropdown-content">
+        <li><a href=index.php?content=ReservasEbook>Buscar</a></li>
+        <li><a href=index.php?content=BorrarReservaEbook>Borrar</a></li>
+        <li><a href=index.php?content=InsertarReservaEbook>Insertar</a></li>
+        <li><a href=index.php?content=Editar+Reserva+Ebook>Modificar</a></li>
+    </ul>
 
 <div class="container">
     <a href="index.php" class="brand-logo">Biblioteca</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class = "btn dropdown-button" href = "#" data-activates = "dropdownBooks">Libros
+            <i class = "mdi-navigation-arrow-drop-down right"></i></a>	 </li>
+        <li><a class = "btn dropdown-button" href = "#" data-activates = "dropdownEbook">Ebooks
             <i class = "mdi-navigation-arrow-drop-down right"></i></a>	 </li>
         <li><a class = "btn dropdown-button" href = "#" data-activates = "dropdownReserves">Reservas
             <i class = "mdi-navigation-arrow-drop-down right"></i></a></li>

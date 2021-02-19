@@ -7,7 +7,7 @@ $column = $_REQUEST["column"];
 
 
 
-$sql = "SELECT DISTINCT " . "$column" . " FROM " . $table . " WHERE " . $column . " LIKE '%$input%'";
+$sql = "SELECT DISTINCT " . "$column" . " FROM " . $table . " WHERE " . $column . " LIKE '%$input%' LIMIT 4";
 $result = mysqli_query($conn, $sql);
 mysqli_close($conn);
 

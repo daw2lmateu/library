@@ -17,7 +17,7 @@
         <p>
             Registrarse si es necesario, pulsando en sign up, y rellenando el formulario con sus datos.
         </p>
-            <img class="responsive-img" src="img/instalacion2.png" alt="Registrarse si es necesario">
+            <img class="responsive-img" src="img/instalacion2.PNG" alt="Registrarse si es necesario">
         <p>
             Una vez descargado, hacer doble click en el ejecutable, y seguir los pasos de instalacion.
         </p>
@@ -25,20 +25,20 @@
         <p>
             Para instalar PHP cabe hacer click <a href="https://windows.php.net/download#php-8.0">aquí</a>, y luego descargar el zip mas seguro
         </p>
-        <img class="responsive-img" src="img/instalacion3.png" alt="Descargar el Thread Safe zip mas reciente.">
+        <img class="responsive-img" src="img/instalacion3.PNG" alt="Descargar el Thread Safe zip mas reciente.">
         <p>
             Descomprimir la carpeta descargada, y pulasr en el ejecutable y Seguir los pasos de instalacion.
         </p>
-        <img class="responsive-img" src="img/instalacion4.png" alt="Ejecutar">
+        <img class="responsive-img" src="img/instalacion4.PNG" alt="Ejecutar">
         <hr>
         <p>
             Una vez instalado, debe importar la base de datos a MYSQL.
         </p>
-        <img class="responsive-img" src="img/instalacion5.png" alt="Ejecutar">
+        <img class="responsive-img" src="img/instalacion5.PNG" alt="Ejecutar">
         <p>
             Debe usar el comando, sustituyendo wp_users por el nombre de la bibliteca, y pPassword123 por su contraseña creada.
         </p>
-        <img class="responsive-img" src="img/instalacion6.png" alt="Ejecutar">
+        <img class="responsive-img" src="img/instalacion6.PNG" alt="Ejecutar">
             <h5>Enhorabuena! ya puede utilizar todas las funcionalidades de la base de datos.</h5>
     </div>
 </div>

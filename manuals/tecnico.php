@@ -6,7 +6,7 @@
     <h2>Manual Tecnico</h2>
     <a href="https://github.com/daw2lmateu/library">Github del proyecto</a>
         <p>
-            Header i Footer son universales, rutas de ficheros son relativas, 
+            Header i Footer son universales, rutas de ficheros son relativas,
             para poder reutilizarlo i testear con localhost
         </p>
         <p>
@@ -41,7 +41,9 @@
         </p>
         <hr>
         <p>
-            TODO online books
+            Libros electronicos, se guardan en su carpeta ( secreta por motivos de seguridad ) y se enseña al usuario mediante readFile() para no enseñar el nombre del pdf al usuario
+            Las reservas duran 7 dias, y se acaban por si solas.
+            Uno no puede reservar libros electronicos durante su penalizacion.
         </p>
         <h2>Carrito de la compra</h2>
         <p>
@@ -57,9 +59,12 @@
             Si el usuario tenia un carrito previo en la base de datos, cuando se logea, se borra el carrito de la base de datos, y se sustituye por el nuevo carrito proviniente de las cookies.
         </p>
         <p>
-            Ahora Usando ajax, aparecen sugerencias de los libros que existen en la base de datos al buscar libros. (Posiblemente se deberia limitar a 10 si aparecen muchos libros)
+            Ahora Usando ajax, aparecen sugerencias de los libros que existen en la base de datos al buscar libros. (Limitado a 4 libros)
         </p>
         <p>
-            Los datos se guardan en cookies y session si uno no esta logeado, aun que se utiliza cookies por defecto.
+            Los datos se guardan en cookies o session cuando uno no esta logeado (se utiliza cookies por defecto).
+        </p>
+        <p>
+            El reloj pide la hora al servidor cada segundo.
         </p>
 </div>

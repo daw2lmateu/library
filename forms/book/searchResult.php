@@ -1,4 +1,5 @@
 <div class="row">
+
             <?php
                 if(isset($_GET['content'])){
                     $title = htmlspecialchars($_GET['title']);
@@ -46,14 +47,8 @@
                             <h6> Precio: <?php echo($book['price']); ?>€</h6>
                             <h6> En stock: <?php echo($book['quantity']); ?> Unidades</h6>
                             <form action="index.php" method="POST">
-                                <input name="pdf" type="num" hidden value="<?php echo($book['ebook']); ?>">
-                                <button class="btn waves-effect waves-light blue" type="submit" value="DisplayEbook" name="content">Ebook
-                                    <i class="material-icons right">local_library</i>
-                                </button>
-                            </form>
-                            <form action="index.php" method="POST">
+                                <input name="id" type="num" hidden value="<?php echo($book['id']); ?>" >
                             <?php if ($book['quantity'] > 0){ ?>
-                                    <input name="id" type="num" hidden value="<?php echo($book['id']); ?>">
                                     <input name="price" type="num" hidden value="<?php echo($book['price']); ?>">
                                     <input name="quantity" type="num" hidden value="1">
                                     <?php 
@@ -71,6 +66,10 @@
                                         <button class="btn waves-effect waves-light blue" type="submit" value="PreReserva" name="content">Reservar
                                             <i class="material-icons right">local_library</i>
                                         </button>
+                                        <button class="btn waves-effect waves-light blue" type="submit" value="PreReservaEbook" name="content">Ebook
+                                            <i class="material-icons right">local_library</i>
+                                        </button>
+                                        <br><br>
                                         <button class="btn waves-effect waves-light green" type="submit" value="AñadirCarrito" name="content">Comprar
                                             <i class="material-icons right">add_shopping_cart</i>
                                         </button>
@@ -78,6 +77,10 @@
                                     } 
                             else{
                             ?>
+                                <button class="btn waves-effect waves-light blue" type="submit" value="PreReservaEbook" name="content">Ebook
+                                    <i class="material-icons right">local_library</i>
+                                </button>
+                                <br><br>
                                 <button class="btn waves-effect waves-light" name="content" disabled>No disponible
                                     <i class="material-icons right">block</i>
                                 </button>

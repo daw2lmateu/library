@@ -1,6 +1,7 @@
 <?php 
-    include('header.php'); 
+    ob_start(); 
 
+    include('header.php'); 
     include('weather.php'); 
     
     if(!empty($_SESSION['message'])){
@@ -48,6 +49,21 @@
             case "buscar":
                 include('forms/book/searchResult.php');
                 break;
+            case "ReservasEbook":
+                include('forms/ebook/search.php');
+                break;
+            case "Reservar Ebook":
+                include('forms/ebook/reserve.php');
+                break;
+            case "BorrarReservaEbook":
+                include('forms/ebook/adminDelete.php');
+                break;
+            case "InsertarReservaEbook":
+                include('forms/ebook/adminInsert.php');
+                break;
+            case "Editar Reserva Ebook":
+                include('forms/ebook/update.php');
+                break;
             case "Reservas":
                 include('forms/reservation/search.php');
                 break;
@@ -80,11 +96,17 @@
     } 
     else if(isset($_POST['content'])){
         switch($_POST['content']):
+            case "Confirmar Datos":
+                include('forms/buy/clientDetails.php');
+                break;
             case "Realizar Compra":
                 include('forms/buy/buyResult.php');
                 break;
             case "PreReserva":
                 include('forms/reservation/reserve.php');
+                break;
+            case "PreReservaEbook":
+                include('forms/ebook/reserve.php');
                 break;
             case "AñadirCarrito":
                 if ($userType != 'guest')
@@ -134,6 +156,15 @@
                 break;
             case "Reservar":
                 include('forms/reservation/reserveResult.php');
+                break;
+            case "Actualiza Reserva Ebook":
+                include('forms/ebook/updateResult.php');
+                break;
+            case "Borrar Reserva Ebook":
+                include('forms/ebook/deleteResult.php');
+                break;
+            case "Reservar Ebook":
+                include('forms/ebook/reserveResult.php');
                 break;
             case "Borrar Usuario":
                 include('forms/user/deleteResult.php');

@@ -6,7 +6,17 @@
     if(isset($_POST['content'])){
         include('dbConnect.php');
 
-        $buyId = $_POST['memberId'] ?? $userId;
+        $buyId = $userId;
+        $nif = htmlspecialchars($_POST['nif']);
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $phone = htmlspecialchars($_POST['phone']);
+        $address = htmlspecialchars($_POST['address']);
+
+        $sql = "UPDATE `_31_members` SET nif = '$nif', name = '$name', email = '$email', 
+        phone = '$phone', address = '$address' WHERE id = '$buyId'";
+
+        $result = mysqli_query($conn, $sql);
 
         $sql = "SELECT * FROM _31_shoppingCart
         WHERE member_id = '$buyId'";

@@ -16,10 +16,18 @@
         <li><a href=index.php?content=Reservas>Buscar</a></li>
 </ul>
 
+<ul id = "dropdownEbooks" class = "dropdown-content">
+        <li><a href=index.php?content=ReservasEbook>Ver Reservas</a></li>
+        <li><a href=index.php?content=Reservar+Ebook>Reservar Ebook</a></li>
+    </ul>
+
+
 <div class="container">
     <a href="index.php" class="brand-logo">Biblioteca</a>
 
     <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class = "btn dropdown-button" href = "#" data-activates = "dropdownEbooks">Ebooks
+            <i class = "mdi-navigation-arrow-drop-down right"></i></a>	 </li>
         <li><a class = "btn dropdown-button" href = "#" data-activates = "dropdownBooks">Libros
             <i class = "mdi-navigation-arrow-drop-down right"></i></a>	 </li>
         <li><a class = "btn dropdown-button" href = "#" data-activates = "dropdownReserves">Reservas

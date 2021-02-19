@@ -1,4 +1,4 @@
-const baseurl = 'http://dataservice.accuweather.com';
+const baseurl = 'https://dataservice.accuweather.com';
 const apikey  = 'nhiA6uhQHEbwlS5BD9f8XAiHruMBfapu';
 
 $.getJSON(`${baseurl}/locations/v1/postalcodes/search`, {
@@ -16,5 +16,6 @@ $.getJSON(`${baseurl}/locations/v1/postalcodes/search`, {
     console.log(tempData[0].WeatherText);
     console.log(tempData[0].WeatherIcon);
 
-    document.getElementById("cloud").src = "img/weather/" + tempData[0].WeatherIcon +".png";
+    document.getElementById('cloud').src = "img/weather/" + tempData[0].WeatherIcon +".png";
+    document.getElementById('temperature').innerHTML = " - " + tempData[0].Temperature.Imperial.Value + " " +  tempData[0].Temperature.Imperial.Unit;
 });

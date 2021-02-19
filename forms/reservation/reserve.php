@@ -48,7 +48,6 @@ if($userType == 'user') {
                     <input type="date" name="date" value="<?php echo date("Y-m-d");?>" min="<?php echo date("Y-m-d");?>" required><br><br>
                     <label>Numero de dias a reservar:</label>
                     <input type="number" name="days" min="1" max="7" required>
-
                     <?php if($book['quantity'] > 0) { ?>
                         <input type="submit" name="content" value="Reservar" class="btn brand z-depth-0">
                     <?php } ?>

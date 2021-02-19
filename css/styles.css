@@ -48,6 +48,11 @@ img {
 	color: darkslateblue;
 }
 
+#temperature{
+	font-family: 'Big Shoulders Stencil Text', cursive;
+	color: rgb(103, 129, 199);
+}
+
 #cloud{
 	vertical-align:middle;
 }

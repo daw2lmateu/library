@@ -16,10 +16,11 @@
                     $email = htmlspecialchars($_POST['email']);
                     $password = htmlspecialchars($_POST['password']);
                     $type = isset($_POST['type']) ? $_POST['type'] : 'user';
+                    $address = isset($_POST['address']) ? $_POST['address'] : NULL;
                     $phone = $_POST['phone'];
-                    $penalty = $_POST['penalty'];
+                    $penalty = isset($_POST['penalty']) ? $_POST['penalty'] : NULL;
                     $sql = "UPDATE `_31_members` SET nif = '$nif', name = '$name', user_name = '$userName', email = '$email', 
-                    password = '$password', type = '$type', phone = '$phone', penalty = '$penalty' WHERE id = '$id'";
+                    password = '$password', type = '$type', phone = '$phone', address = '$address', penalty = '$penalty' WHERE id = '$id'";
 
                     $result = mysqli_query($conn, $sql);
                     if($result === FALSE) { 

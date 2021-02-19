@@ -7,7 +7,7 @@ include('dbConnect.php');
         $result = mysqli_query($conn,$sql);
         $items = mysqli_fetch_all($result, MYSQLI_ASSOC);
         mysqli_free_result($result);
-        $cartType = "SQL";
+        $cartType = "\"SQL\"";
     }
     else{
         if(isset($_COOKIE[$cookies])){
@@ -90,7 +90,7 @@ include('dbConnect.php');
                         <?php }
                         else{
                             ?>
-                            <button class="btn-floating waves-effect waves-teal" type="submit" name="content" value="Realizar Compra">
+                            <button class="btn-floating waves-effect waves-teal" type="submit" name="content" value="Confirmar Datos">
                                 <i class="material-icons right">shop</i>
                             </button>
                             <?php   
@@ -104,7 +104,12 @@ include('dbConnect.php');
         </div>
     </div>
         </section>
-    <?php } 
+    <?php }
+    else{
+        mysqli_close($conn);
+        $_SESSION['message'] = "No hay ningun libro en el carrito";
+        header("location: index.php");
+    } 
     mysqli_close($conn);
 ?>
 <script src="js/updateShoppingCart.js"></script>

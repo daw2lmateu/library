@@ -48,6 +48,10 @@
         <p>
             Para insertar un libro, hacer click en libro ( en el menu superior ) y hacer click en insertar.
         </p>
+        <p>
+            Los libros electronicos se reservan, y despues se pueden leer en la lista de libros electronicos reservados.
+            La reserva dura 7 dias, pero se pueden cancelar en cualquier momento.
+        </p>
     </div>
 </body>
 </html>
